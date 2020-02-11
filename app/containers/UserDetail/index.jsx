@@ -18,7 +18,7 @@ function mapDispatchToProps (dispatch) {
 function fetch (dispatch) {
   return new Promise((resolve, reject) => {
     sa
-      .get('/user')
+      .get('user')
       .set('Accept', 'application/json')
       .end((err, res) => {
         if (err) {

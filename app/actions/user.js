@@ -1,5 +1,5 @@
 import sa from 'superagent'
-import { push } from 'react-router-redux'
+import { push } from 'connected-react-router'
 
 function login () {
   return {
@@ -26,7 +26,7 @@ function doLogin (username, password) {
 
     return new Promise((resolve, reject) => {
       sa
-        .post('/login')
+        .post('login')
         .send({ username, password })
         .set('Accept', 'application/json')
         .end((err, res) => {

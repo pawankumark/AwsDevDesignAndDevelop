@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './index.less'
+import assets from '../../../../util/assets'
 
 class Hero extends React.Component {
   render () {
@@ -8,7 +9,7 @@ class Hero extends React.Component {
         <div className={styles.hero}>
           <div className={styles.mainball}>
             <img
-              src='public/images/main-ball-final.png'
+              src={assets.main_ball}
               alt='main ball'
             />
           </div>

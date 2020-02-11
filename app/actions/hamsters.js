@@ -20,7 +20,7 @@ function doFavorite (hamster) {
 
     return new Promise((resolve, reject) => {
       sa
-        .post(`/favorite/${hamster.id}`)
+        .post(`favorite/${hamster.id}`)
         .end((err, res) => {
           if (err) {
             console.error(err)
@@ -39,7 +39,7 @@ function doUnfavorite (hamster) {
 
     return new Promise((resolve, reject) => {
       sa
-        .delete(`/favorite/${hamster.id}`)
+        .delete(`favorite/${hamster.id}`)
         .end((err, res) => {
           if (err) {
             console.error(err)
