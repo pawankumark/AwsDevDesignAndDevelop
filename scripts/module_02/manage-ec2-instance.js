@@ -33,5 +33,5 @@ function terminateInstance(instanceId) {
   });
 }
 
-// listInstances().then(data => console.log(data));
-terminateInstance("i-0fbc9fd15325e8cdc").then(data => console.log(data));
+listInstances().then(data => console.log(data));
+// terminateInstance("i-0fbc9fd15325e8cdc").then(data => console.log(data));
